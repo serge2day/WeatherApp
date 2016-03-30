@@ -54,6 +54,11 @@
 		2BBCDAC71CAC52A700835766 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				2BBCDADC1CAC53AA00835766 /* Model */,
+				2BBCDADD1CAC53AF00835766 /* View */,
+				2BBCDADE1CAC53B400835766 /* Controller */,
+				2BBCDADF1CAC53BC00835766 /* Utils */,
+				2BBCDAE01CAC53C200835766 /* Ressources */,
 				2BBCDAC81CAC52A700835766 /* AppDelegate.swift */,
 				2BBCDACA1CAC52A700835766 /* ViewController.swift */,
 				2BBCDACC1CAC52A700835766 /* Main.storyboard */,
@@ -62,6 +67,41 @@
 				2BBCDAD41CAC52A700835766 /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		2BBCDADC1CAC53AA00835766 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2BBCDADD1CAC53AF00835766 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2BBCDADE1CAC53B400835766 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2BBCDADF1CAC53BC00835766 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		2BBCDAE01CAC53C200835766 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +136,12 @@
 				TargetAttributes = {
 					2BBCDAC41CAC52A700835766 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = X9MD54RCPH;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -249,10 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theros.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +309,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theros.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
